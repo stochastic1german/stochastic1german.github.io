@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+
+	<meta name="description" content="">
+	<meta name="generator" content="Grapedrop">
+
+	<!-- Apple Stuff -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="http://c5b7d00.grapedrop.com">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.2.0/lory.min.js"></script>
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>  
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.min.js"></script>  
+
+	<script type="text/javascript" src = "app.js"></script>
+	<script type="text/javascript" src = "inout.js"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/mpage-base.css">
+	<link rel="stylesheet" href="styles/mpage-style.css">
+</head>
+
+<body ng-controller = "ModularCtrl">
+
+	<!-- <audio id="myAudio">
+		<source src="http://dict.leo.org/media/audio/Woh7Qu44_hZIag3yx9QBBA.mp3" type="audio/mpeg">
+  		Your browser does not support the audio element.
+	</audio>
+
+ -->	
+ 	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden;
+		}
+	</style>
+	<div role="group" class="btn-group"> </div>
+	<section id="iwtd5" class="gpd-section">
+		<div id="ifchx" class="gpd-container">
+			<div id="ivrz2" class="gpd-text">
+			{{ word }}
+			</div>
+		</div>
+	</section>
+	<section ng-init = "option = 0" ng-show = "option == 0">
+		<h1 id="iiltx"> Choose one of the options given: </h1>
+		<button type="button" class="btn btn-primary" ng-click = "setOption(1);"> Visual </button>
+		<button type="button" class="btn btn-primary" ng-click = "setOption(2);"> Audio </button>
+		<button type="button" class="btn btn-primary" ng-click = "setOption(3);"> Writing </button>
+	</section>
+	<section ng-if = "option == 2">
+		<button onclick="playAudio()" type="button">Play Audio</button>
+	</section>
+	<section id="i67tv" class="gpd-section">
+		<div id="il0oz" class="gpd-text" ng-click = next()>
+		Next
+		</div>
+	</section>
+	<section id="i71sw" class="gpd-section"> </section>
+	<section id="i91qh" class="gpd-section"> </section>
+	<section id="i8oky" class="gpd-section"> </section>
+	<figure class="figure"></figure>
+				
+
+<style>
+	a.page-brand-badge {
+		border-radius: 3px !important;
+		background-color: white !important;
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
+		padding: 5px 7px !important;
+		font-family: Helvetica, sans-serif !important;
+		font-size: 12px !important;
+		text-decoration: none !important;
+		color: #555 !important;
+		transition: box-shadow 0.25s !important;
+	}
+	a.page-brand-badge:hover {
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 10px rgba(0,0,0,0.1);
+	}
+
+</style>
+</body>
+</html>

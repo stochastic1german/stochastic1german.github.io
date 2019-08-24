@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+
+	<meta name="description" content="">
+	<meta name="generator" content="Grapedrop">
+
+	<!-- Apple Stuff -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="http://c5b7d00.grapedrop.com">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.2.0/lory.min.js"></script>
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>	
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.min.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+
+	<script type="text/javascript" src = "app.js"></script>
+	<script type="text/javascript" src = "inout.js"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/dpage-base.css">
+	<link rel="stylesheet" href="styles/dpage-style.css">
+</head>
+
+<body ng-controller = "DifficultyCtrl">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden;
+		}
+	</style>
+	<div role="group" class="btn-group"> </div>
+	<section class="gpd-section" id="iwtd5">
+		<div class="gpd-container" id="ifchx">
+			<div class="gpd-text" id="ivrz2">
+			{{ word }}
+			</div>
+		</div>
+	</section>
+
+	<!-- Page 1 -->
+	<div ng-show = "page == 1">
+		<h1 id="ibm47">
+		General Difficulty
+		</h1>
+		<section id="igsmr" class="gpd-section">
+			<button type="button" class="btn btn-primary" ng-click = "setAD(1);"> 1 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(2);"> 2 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(3);"> 3 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(4);"> 4 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(5);"> 5 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(6);"> 6 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(7);"> 7 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(8);"> 8 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(9);"> 9 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setAD(10);"> 10 </button>
+		</section>
+
+		<h1 id="ibm47">
+		Relative Difficulty
+		</h1>
+		<section class="gpd-section" id="io4ik">
+			<button type="button" class="btn btn-primary" ng-click = "setRD(1);"> 1 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(2);"> 2 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(3);"> 3 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(4);"> 4 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(5);"> 5 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(6);"> 6 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(7);"> 7 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(8);"> 8 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(9);"> 9 </button>
+			<button type="button" class="btn btn-primary" ng-click = "setRD(10);"> 10 </button>
+		</section>
+		<section class="gpd-section" id="i67tv">
+			<button type="button" class="btn btn-primary" ng-click = next12()> Next </button>
+		</section>
+	</div>
+
+
+	<!-- Page 2 -->
+	<div ng-show = "page == 2">
+		<section ng-init = "option = 0" ng-show = "option == 0">
+			<h1 id="iiltx"> Choose one of the options given: </h1>
+			<button type="button" class="btn btn-primary" ng-click = "setOption(1);"> Visual </button>
+			<button type="button" class="btn btn-primary" ng-click = "setOption(2);"> Audio </button>
+			<button type="button" class="btn btn-primary" ng-click = "setOption(3);"> Writing </button>
+		</section>
+		<!-- Image -->
+		<section ng-if = "option == 1" ng-model = "url" ng-click = getImage()>
+			<img src = "{{ url }}" id = "img">
+		</section>
+		<!-- Audio -->
+		<section ng-if = "option == 2">
+			<button ng-click=playAudio() type="button">Play Audio</button>
+		</section>
+		<!-- Writing -->
+		<section ng-if = "option == 3">
+			<input type="text" id="Writing" name="firstname" placeholder="Write text ...">
+		</section>
+		
+		<section id="i67tv" class="gpd-section">
+			<button type="button" class="btn btn-primary" ng-click = next23()> Next </button>
+		</section>
+	</div>
+
+	<style>
+		a.page-brand-badge {
+			border-radius: 3px !important;
+			background-color: white !important;
+			box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
+			padding: 5px 7px !important;
+			font-family: Helvetica, sans-serif !important;
+			font-size: 12px !important;
+			text-decoration: none !important;
+			color: #555 !important;
+			transition: box-shadow 0.25s !important;
+		}
+		a.page-brand-badge:hover {
+			box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 10px rgba(0,0,0,0.1);
+		}
+
+		img {
+			border-radius: 8px;
+			border : 10px solid rgb(252, 186, 3);
+			padding: 5px;
+			width: 500px;
+			height: auto;
+		}
+
+	</style>
+</body>
+</html>

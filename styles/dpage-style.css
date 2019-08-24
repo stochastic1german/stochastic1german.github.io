@@ -1,0 +1,86 @@
+* {
+		 box-sizing: border-box;
+		}
+	 body {
+		margin: 0;
+		text-align:center;
+	}
+	.btn.btn-primary{
+		width:auto;
+		font-family:Trebuchet MS, Helvetica, sans-serif;
+		font-size:30px;
+		text-align:center;
+		padding:6px 50px 6px 50px;
+		margin:0 0 0 10px;
+		color:rgb(87, 247, 245);
+		background-color: rgb(90, 87, 255);
+		border-radius:15px 15px 15px 15px;
+		cursor: pointer;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+}
+
+.btn.btn-primary:hover {background-color: rgb(170, 168, 255)		}
+
+		.btn:active {
+			background-color: #3e8e41;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+	}
+.btn.btn-primary:focus {background-color: rgb(90, 87, 255); rgb(87, 247, 245); border-radius:15px; border: none; box-shadow: 0 9px rgb(255, 153, 202)		}
+	#igsmr{
+		text-align:center;
+		padding:50px 0 50px 0;
+	}
+	#ifchx{
+		font-family:Courier New, Courier, monospace;
+		font-size:60px;
+		font-weight:700;
+		letter-spacing:2px;
+		color: rgb(87, 247, 245);
+		text-align:center;
+		border:0 inset rgb(33, 37, 41);
+		background-color: rgb(25, 144, 255);
+	}
+	#iwtd5{
+		padding:0 0 0 0;
+		border:100px outset rgb(255, 153, 202);
+	}
+	#ibm47{
+		font-family:Trebuchet MS, Helvetica, sans-serif;
+		font-size:50px;
+		text-align:center;
+		font-weight:600;
+		padding:20px 0 0 0;
+	}
+	#io4ik{
+		text-align:center;
+		padding:50px 0 50px 0;
+	}
+	#i8oky{
+		padding:0 40px 0 0;
+		text-align:right;
+	}
+	#i91qh{
+		padding:0 0 0 0;
+	}
+	#i71sw{
+		padding:0 0 0 0;
+	}
+	#i67tv{
+		text-align:right;
+		padding:0 30px 0 0;
+	}
+	#iiltx{
+		font-family:Trebuchet MS, Helvetica, sans-serif;
+		font-size:30px;
+		text-align:center;
+		font-weight:600;
+		padding:20px 0 20px 0;
+	}
+
+	#img{
+		
+	}
+	

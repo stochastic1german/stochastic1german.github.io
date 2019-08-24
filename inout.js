@@ -1,0 +1,14 @@
+var words = [ {word: 'Glück', means: 'Happiness', type: 'Adjective', audio: 'http://dict.leo.org/media/audio/NjU-UOc1d-iR9PpKjtxpcA.mp3', img: 'https://prod-lippincott.imgix.net/app/uploads/2016/09/12153423/Happiness_hero_1_v21.jpg?auto=false%2Ccompress&q=90&w=1024&h=554&fit=crop'}, 
+			  {word: 'Reich', means: 'Rich', type: 'Adjective', audio: 'http://dict.leo.org/media/audio/zvfrVRKo2_fIaJLT-o5LyA.mp3', img: 'https://www.pinclipart.com/picdir/middle/1-11244_money-cartoon-royalty-free-clip-art-rich-cartoon.png'}, 
+			  {word: 'Unheimlich', means: 'Scary', type: 'Adjective', audio: 'http://dict.leo.org/media/audio/VgxCvFgl36CJq_TeciVk5Q.mp3', img: 'http://img.clipartlook.com/scary-halloween-clipart-scary-clip-art-340_341.jpg'}, 
+			  {word: 'Bauen', means: 'Build', type: 'Verb', audio: 'http://dict.leo.org/media/audio/YrEg3GXGDPnQKSsPqD4V7A.mp3', img: 'http://clipartmag.com/images/build-clipart-7.gif'}, 
+			  {word: 'Wütend', means: 'Angry', type: 'Adjective', audio: 'http://dict.leo.org/media/audio/QoTblYBUfo4shQPKi6RaRQ.mp3', img: 'https://media.istockphoto.com/vectors/angry-girl-vector-id522483700?k=6&m=522483700&s=612x612&w=0&h=FqAwZj0Z_zeY35ndFKaiFRUS-StqSiBsud1LsCP5Eqg='}, 
+			  {word: 'Fahren', means: 'Drive', type: 'Verb', audio: 'http://dict.leo.org/media/audio/s-u7JK2atFWcqHDqdquOpQ.mp3', img: 'http://www.sclance.com/clipart/drive-to-school-clipart/drive-to-school-clipart_676045.jpg'}, 
+			  {word: 'Vorstellen', means: 'Imagine', type: 'Verb', audio: 'http://dict.leo.org/media/audio/a-808QMNMgrLHM-ePHTl2Q.mp3', img: ''}, 
+			  {word: 'Spaziergang', means: 'Walk', type: 'Verb', audio: 'http://dict.leo.org/media/audio/n7aJQnPPKdKkdMQRMnFevg.mp3', img: 'https://img.clipartimage.com/clipart-a-walking-girl-girl-walk-clipart-463_800.png'}, 
+ 			  {word: 'Hungrig', means: 'Hungry', type: 'Adjective', audio: 'http://dict.leo.org/media/audio/OI8Cl1OuhpIiYzUwNKlFEQ.mp3', img: 'https://media.istockphoto.com/vectors/young-suffering-sad-man-is-hungry-vector-id858503000?k=6&m=858503000&s=612x612&w=0&h=pm50w8gm5scP4Koget72B9y3knYltq97J7vIrI7l17U='}, 
+ 			  {word: 'Nett', means: 'Kind', type: 'Adjective', audio: 'http://dict.leo.org/media/audio/tb-Sdbsz2t7pppBfhbeKyw.mp3', img: 'https://i.pinimg.com/736x/f4/2c/01/f42c0145385d09cd9c9df7353db0d69b.jpg'},
+ 			  {word: 'Bezaubernd', means: 'Adorable', type: 'Adjective', audio: 'http://dict.leo.org/media/audio/eCP5aJgumBvo-T_b6se45w.mp3', img: 'https://i.pinimg.com/originals/e6/f5/d2/e6f5d201c7f1e458f6efd23323215962.jpg'}, 
+ 			  {word: 'Sauber', means: 'Clean', type: 'Adjective', audio: 'http://dict.leo.org/media/audio/QR_a-qe-sTxnWGHg1Htr7Q.mp3', img: 'http://www.wikihow.com/images/6/60/Clean-a-Shared-Bedroom-Step-10.jpg'}
+ 			]
+ 
