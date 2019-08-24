@@ -1,18 +1,5 @@
 var app = angular.module('myApp', ['ui.router']);  // the array is the list of dependencies
-
-// app.factory('dataModel', function(){
-// 	var obj = {};
-// 	obj.setModel = function(key, value) {
-// 		obj[key] = value;
-// 	}
-
-// 	obj.getModel = function(key) {
-// 		return obj[key];
-// 	}
-
-// 	return obj;
-// });
-
+var fref = firebase.database().ref();
 app.controller('MainCtrl', function($scope){
 	
 });
@@ -33,6 +20,9 @@ app.controller('DifficultyCtrl', function($scope) {
 	}
 	$scope.next12 = function(){
 		console.log("from Dpage");
+		fref.child("user").child("ad").set(ad);
+		fref.child("user").child("rd").set(rd);
+
 		startTime = new Date();
 		$scope.page = 2;
 	}
